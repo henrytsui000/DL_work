@@ -15,7 +15,7 @@ def translate_text():
     text_input = data['text']
     translation_output = data['to']
     response = translate.get_translation(text_input, translation_output)
-    return jsonify(response)
+    return "asdf"
 
 import sentiment
 

@@ -26,5 +26,8 @@ def get_translation(text_input, language_output):
     body = [{
         'text' : text_input
     }]
+    print(type(body))
     response = requests.post(constructed_url, headers=headers, json=body)
     return response.json()
+
+get_translation('asdf', 'asdf')
