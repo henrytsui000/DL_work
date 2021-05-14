@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>HW of CNN</title>
+		<!-- <link rel="shortcut icon" href="favicon.ico" > -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/css/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/css/assets/css/noscript.css" /></noscript>
+		<style type="text/css">
+            div #footer{
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+                border: 0 0 0 0 ;
+            }
+        </style>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/tocas.css') }}">
+		<link rel='stylesheet' href='..\static\css\style.css'>
+		<link rel='stylesheet' href='..\static\css\tocas.css'>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+			<div id="header">
+
+				<div class="inner">
+					<header>
+						<h1><a href="index.html" id="logo" >車輛類型判定</a></h1>
+						<hr />
+						<p>請選擇汽車/機車/自行車的圖片</p>
+					</header>
+					
+					<form action="/uploader" method="post" enctype="multipart/form-data" class="ts form">
+						<input type="file" name="file">
+						<input type="submit" value="Upload">
+					</form>
+				</div>
+
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">圖片判定</a></li>
+						<li><a href="useless.html">模型架構</a></li>
+						<li><a href="train.html">捲積層</a></li>
+					</ul>
+				</nav>
+			</div>
+				
+			
+		</div>
+		<!-- Scripts -->
+			<script src="../static/css/assets/js/jquery.min.js"></script>
+			<script src="../static/css/assets/js/jquery.dropotron.min.js"></script>
+			<script src="../static/css/assets/js/jquery.scrolly.min.js"></script>
+			<script src="../static/css/assets/js/jquery.scrollex.min.js"></script>
+			<script src="../static/css/assets/js/browser.min.js"></script>
+			<script src="../static/css/assets/js/breakpoints.min.js"></script>
+			<script src="../static/css/assets/js/util.js"></script>
+			<script src="../static/css/assets/js/main.js"></script>
+			<!-- <script src="../static/css/assets/js/main2.js"></script> -->
+	</body>
+</html>
